@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {% load staticfiles %}
+  <title>Document</title>
+
+</head>
+<body>
+  <form class="" action="/add" method="post">
+    {% csrf_token %}
+    <input type="text" name="email" value="Email Address">
+    <input type="submit" name="name" value="Submit">
+  </form>
+
+</body>
+</html>
